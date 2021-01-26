@@ -1,0 +1,8 @@
+name = "LP"
+uuid = "8937eb08-edad-43d3-a492-91611a145851"
+authors = ["DonQueso89 <kg.v.ekeren@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Clp = "e2554f3b-3117-50c0-817c-e040a3ddf72d"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
