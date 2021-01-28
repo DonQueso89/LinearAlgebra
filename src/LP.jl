@@ -49,4 +49,27 @@ function practice_problem_one()
 
 end # practice problem one
 
+function exercise_seven()
+    # inspired by Linear Algebra and its applications Ch. 9
+
+    m = Model(Clp.Optimizer)
+
+    # unknowns
+    @variable(m, 0 <= x1)
+    @variable(m, 0 <= x2)
+
+    # dot(C, x)
+    @objective(m, Max, 80x1 + 65x2)
+
+    @constraint(m, 2x1 + x2 <= 32)
+    @constraint(m, x1 + x2  <= 18)
+    @constraint(m, x1 + 3x2  <= 24)
+
+    optimize!(m)
+
+    println("Optimal X: x1: $(value(x1)) x2: $(value(x2))")
+    println("Optimal Objective value: $(objective_value(m))")
+
+end # exercise seven
+
 end # module
