@@ -1,3 +1,3 @@
 # LinearAlgebra
 
-Notes and explorations in tooling and techniques related to a course in Linear Algebra
+Notes and explorations in tooling and techniques related to linear algebra
